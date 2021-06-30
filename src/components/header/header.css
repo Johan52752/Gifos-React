@@ -1,0 +1,33 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding:0 60px ;
+    align-items: center;
+    
+}
+.header-logo{
+    width: 59px;
+    height: 59px;
+}
+.header-button{
+    color:#6809E1;
+    border-radius: 61px;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    outline:none;
+    font-style: normal;
+    font-weight:    bold;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #6809E1;
+    cursor: pointer;
+}
+.dark text{
+    fill: white;
+}
+.dark-button{
+    border: 1px solid white;
+    color:white;
+    background-color: rgb(32, 32, 32);
+}

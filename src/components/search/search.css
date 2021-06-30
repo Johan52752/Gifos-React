@@ -1,0 +1,129 @@
+
+.Search{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+hr{
+    width: 95%;
+    margin: 0 auto;
+}
+.search-text{
+    margin-top: 15px;
+    color: #572EE5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-align: center;
+}
+
+.search-label{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 61px;
+    border:1px solid #572EE5;
+    align-items: center;
+    padding-left: 12px;
+    
+}
+.search-label input{
+    border-radius: 61px 0px 0px 61px;
+    width: 80%;
+    outline: none;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3F3F3F;
+    border:none;
+    font-weight: bold;
+}
+.search-label button{
+    border-radius: 0px 61px 61px 0px;
+    width: 20%;
+    margin-left: -2px;
+    outline: none;
+    background: white;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+.search-tags{
+    list-style: none;
+    width: 500px;
+    position:absolute;
+    top:440px;
+    background-color: white;
+    border-radius: 0px 0px 25px 25px;
+    font-weight: bold;
+    color: #bdbdbe;
+    border:1px solid #572EE5;
+    border-top: white;
+}
+.search-tags a{
+    cursor: pointer;
+}
+.search-tags li:hover{
+    text-decoration:underline;
+}
+.search-tags li{
+    padding: 10px;
+}
+.hidden{
+    display: none;
+}
+.search-label button svg{
+    width: 20px;
+    height: 20px;
+    fill:#572EE5;
+    transition: all 400s ease;
+}
+.border{
+    border-radius: 25px 25px 0px 0px;
+}
+.border input, button{
+    border-radius: 25px 25px 0px 0px;
+}
+.search-tags a svg{
+    width: 15px;
+    height: 15px;
+    fill:#bdbdbe;
+}
+.search-tags a{
+    display: flex;
+    align-items: center;
+    padding-left: 12px;;
+}
+.lupa-label{
+    width: 20px;
+    height: 20px;
+    fill:#bdbdbe;
+    cursor: pointer;
+}
+.dark-text{
+    color:white;
+}
+.dark-label{
+    border:1px solid white;
+}
+.dark-label input{
+    color:white;
+    background-color: rgb(32, 32, 32);
+}
+
+.dark-label button{
+    color:white;
+    background-color: rgb(32, 32, 32);
+}
+.dark-ul{
+    background-color: rgb(32, 32, 32);
+    border:1px solid white;
+    border-top: none;
+}

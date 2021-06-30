@@ -1,0 +1,45 @@
+.Results{
+}
+
+.results-text{
+    margin-top:79px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #572EE5;
+    margin-bottom: 31px;
+}
+.results-gifs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grey{
+    background-color: #E7E7E7;
+}
+.results-gifs-gif{
+    width: 270px;
+    height: 270px;
+    margin-top: 40px;
+}
+.dark-results .results-text{
+    color:white
+}
+.dark-results .grey{
+    background: black;
+}
+.loading{
+    width: 40px;
+    height: 40px;
+}
+.max{
+    margin-bottom: 84px;
+}
+.dark-results results-gifs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
