@@ -2,20 +2,19 @@ import "./search.css"
 import {useState,useEffect} from "react"
 import {ReactComponent as Lupa} from "./lupa.svg"
 import {ReactComponent as Cerrar} from "./cerrar.svg"
-export function Search({darkmode,input, button, enter}){
+import { useContext } from "react";
+import {AppContext} from "../../context/AppContext"
+export function Search({input, button, enter}){
     const [tags,setTags]=useState([])
     const [showUl,setShowUl]=useState(false);
+    const {darkmode,setDarkMode}=useContext(AppContext)
     useEffect(()=>{
-        
         if (input[0] && showUl) {
-            
             const promise=fetch(`https://api.giphy.com/v1/gifs/search/tags?api_key=dsHlCJELtdOpI8TdMJBPUV1hdVlUFjHa&q=${input[0]}&limit=5&offset=0&rating=g&lang=en`)
             promise.then(response=>response.json())
             .then(data=>{
                 setTags(data.data)
-                
             })
-            
         }else{
             setTags([]);
             setShowUl(false)

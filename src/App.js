@@ -1,15 +1,16 @@
 import './App.css';
-import {useState,useEffect} from "react"
+import {useState,useEffect,useContext} from "react"
 import {Header} from "./components/header/headers";
 import {Results} from "./components/results/results";
 import {Search} from "./components/search/search";
+import {AppContext} from "./context/AppContext"
 
 function App() {
   const[inputData, setInputData]=useState("");
   const[click, setClick]=useState(false);
   const[gifs,setGifs]=useState(null);
   const[isLoading,setIsLoading]=useState(null);
-  const [darkmode,setDarkMode]=useState(false);
+  const {darkmode,setDarkMode}=useContext(AppContext);
 
   const handleInputData=(e)=>{
     setInputData(e.target.value);
@@ -43,9 +44,9 @@ function App() {
   return (
     <div className={`App ${darkmode?"dark":""}`}>
       <div className={`app-container ${darkmode?"dark":""}`}>
-        <Header handledarkmode={handleDarkMode} darkmode={darkmode}/>
-        <Search darkmode={darkmode} input={[inputData,handleInputData,setInputData]} button={handleClick} enter={handleEnter}/>
-        <Results darkmode={darkmode} loading={isLoading} data={gifs}/>
+        <Header handledarkmode={handleDarkMode} />
+        <Search input={[inputData,handleInputData,setInputData]} button={handleClick} enter={handleEnter}/>
+        <Results loading={isLoading} data={gifs}/>
       </div>
     </div>
   );

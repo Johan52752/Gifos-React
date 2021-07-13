@@ -1,5 +1,8 @@
 import "./results.css"
-export function Results({darkmode,data,loading}){
+import { useContext } from "react";
+import {AppContext} from "../../context/AppContext"
+export function Results({data,loading}){
+    const {darkmode,setDarkMode}=useContext(AppContext);
     let response=""
     if(loading===true){
         response=(<img className="loading" src="./images\VAyR.gif" alt="" />)
