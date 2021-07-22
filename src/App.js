@@ -45,7 +45,7 @@ function App() {
     <div className={`App ${darkmode?"dark":""}`}>
       <div className={`app-container ${darkmode?"dark":""}`}>
         <Header handledarkmode={handleDarkMode} />
-        <Search input={[inputData,handleInputData,setInputData]} button={handleClick} enter={handleEnter}/>
+        <Search handleInput={handleInputData} stateInput={[inputData,setInputData]} click={handleClick} enter={handleEnter}/>
         <Results loading={isLoading} data={gifs}/>
       </div>
     </div>
