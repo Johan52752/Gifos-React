@@ -23,6 +23,7 @@
     width: 270px;
     height: 270px;
     margin-top: 40px;
+    border:2px solid white;
 }
 .dark-results .results-text{
     color:white
