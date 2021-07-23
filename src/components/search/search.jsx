@@ -39,7 +39,7 @@ export function Search({handleInput,stateInput, click, enter}){
                         enter(e)
                         setShowUl(false);
                     }} 
-                    value={handleInput[0]} 
+                    value={stateInput[0]} 
                     onChange={(e)=>{
                         handleInput(e);
                         setShowUl(true);
